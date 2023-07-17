@@ -33,8 +33,8 @@ COPY container-test.sh /
 # Configure php
 # Get and install jobe
 # Clean up
-RUN ln -snf /usr/share/zoneinfo/"$TZ" /etc/localtime && \
-    echo "$TZ" > /etc/timezone && \
+RUN ln -snf /usr/share/zoneinfo/"Pacific/Auckland" /etc/localtime && \
+    echo "Pacific/Auckland" > /etc/timezone && \
     apt-get update && \
     apt-get --no-install-recommends install -yq \
         acl \
