@@ -79,7 +79,7 @@ RUN ln -snf /usr/share/zoneinfo/"Pacific/Auckland" /etc/localtime && \
     rm -rf /var/lib/apt/lists/*
 
 # Expose apache
-EXPOSE 80
+EXPOSE $PORT
 
 # Healthcheck, minimaltest.py should complete within 2 seconds
 HEALTHCHECK --interval=5m --timeout=2s \
