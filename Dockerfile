@@ -13,6 +13,7 @@ LABEL \
     org.opencontainers.image.source="https://github.com/trampgeek/jobeinabox"
 
 ARG TZ=Pacific/Auckland
+ARG PORT=80
 # Set up the (apache) environment variables
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
